@@ -2005,7 +2005,7 @@ func wrapCellRendererSpinner(obj *glib.Object) *CellRendererSpinner {
 	return &CellRendererSpinner{CellRenderer{glib.InitiallyUnowned{obj}}}
 }
 
-// CellRendererSpinnerNew is a wrapper around gtk_cell_renderer_text_new().
+// CellRendererSpinnerNew is a wrapper around gtk_cell_renderer_spinner_new().
 func CellRendererSpinnerNew() (*CellRendererSpinner, error) {
 	c := C.gtk_cell_renderer_spinner_new()
 	if c == nil {
